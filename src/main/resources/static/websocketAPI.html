@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket文档</title>
+</head>
+<body>
+WebSocketServer接口：ws:39.106.148.233:8080/websocket/{mongoId} <br><br>
+建立连接自动向好友发送上线消息：<br>
+  {<br>
+    "toId":"...",<br>
+    "messageType":"online",<br>
+    "fromId":"...",<br>
+    "contentType":"system",<br>
+    "content":"用户上线",<br>
+    "sendTime":"..."<br>
+  }<br><br>
+断开连接自动向好友发送上线消息：<br>
+{<br>
+  "toId":"...",<br>
+  "messageType":"offline",<br>
+  "fromId":"...",<br>
+  "contentType":"system",<br>
+  "content":"用户下线",<br>
+  "sendTime":"..."<br>
+}<br><br>
+send发送消息时的JSON格式:(浏览器发送消息时无需fromId,后端直接根据ws server获取,从后端推送消息时会带着fromId)<br>
+{<br>
+  "messageType":"single",    single 一对一聊天, group 群聊<br>
+  "contentType":"text",     text 文本消息, image 图片消息<br>
+  "toId":"...",   用户的mongoId,或群聊groupId<br>
+  "content":"...")<br>
+}<br>
+</body>
+</html>

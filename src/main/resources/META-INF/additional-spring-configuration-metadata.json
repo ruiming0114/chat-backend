@@ -1,0 +1,23 @@
+{
+  "properties": [
+    {
+      "name": "chat.image.default_user_image_path",
+      "type": "java.lang.String",
+      "description": "Description for chat.image.default_user_image_path."
+    },
+    {
+      "name": "chat.image.default_group_image_path",
+      "type": "java.lang.String",
+      "description": "Description for chat.image.default_group_image_path."
+    },
+    {
+      "name": "chat.token.short_expire_time",
+      "type": "java.lang.Long",
+      "description": "Description for chat.token.short_expire_time."
+    },
+    {
+      "name": "chat.token.long_expire_time",
+      "type": "java.lang.Integer",
+      "description": "Description for chat.token.long_expire_time."
+    }
+  ] }
